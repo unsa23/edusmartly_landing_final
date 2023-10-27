@@ -8,14 +8,8 @@ import Footer from "./components/footer";
 function App() {
   return (
     <div>
-      <Navbar />
-      <Hero />
-      <About />
-      <Signup />
-      <Cards />
-      <Footer />
+      <Navbar /> <Hero /> <About /> <Signup /> <Cards /> <Footer />
     </div>
   );
 }
-
 export default App;

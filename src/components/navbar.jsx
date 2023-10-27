@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
+import { Link } from "react-scroll";
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
@@ -14,11 +15,66 @@ const Navbar = () => {
         EDUSMARTLY.
       </h1>
       <ul className="hidden md:flex ">
-        <li className="p-4">Home</li>
-        <li className="p-4">About</li>
-        <li className="p-4">Signup</li>
-        <li className="p-4">Pricing</li>
-        <li className="p-4">Contact</li>
+        <li className="p-4 ">
+          <Link
+            to="home"
+            spy={true}
+            smooth={true}
+            offset={0}
+            duration={500}
+            className="mb-1 border-b-4 border-transparent hover:border-[#00df9a] cursor-pointer"
+          >
+            Home
+          </Link>
+        </li>
+        <li className="p-4">
+          <Link
+            to="about"
+            spy={true}
+            smooth={true}
+            offset={50}
+            duration={500}
+            className="border-b-4 border-transparent hover:border-[#00df9a] cursor-pointer"
+          >
+            About
+          </Link>
+        </li>
+        <li className="p-4">
+          <Link
+            to="signup"
+            spy={true}
+            smooth={true}
+            offset={-100}
+            duration={500}
+            className=" border-b-4 border-transparent hover:border-[#00df9a] cursor-pointer"
+          >
+            Signup
+          </Link>
+        </li>
+        <li className="p-4">
+          <Link
+            to="pricing"
+            spy={true}
+            smooth={true}
+            offset={50}
+            duration={500}
+            className="border-b-4 border-transparent hover:border-[#00df9a] cursor-pointer"
+          >
+            Pricing
+          </Link>
+        </li>
+        <li className="p-4">
+          <Link
+            to="contact"
+            spy={true}
+            smooth={true}
+            offset={50}
+            duration={500}
+            className="border-b-4 border-transparent hover:border-[#00df9a] cursor-pointer"
+          >
+            Contact
+          </Link>
+        </li>
       </ul>
       <div onClick={handleNav} className="block md:hidden z-10">
         {nav ? (
@@ -38,12 +94,61 @@ const Navbar = () => {
           EDUSMARTLY.
         </h1>
         <ul className="p-4 uppercase">
-          <li className="p-4 border-b border-gray-600">Home</li>
-          <li className="p-4 border-b border-gray-600">About</li>
-          <li className="p-4 border-b border-gray-600">Signup</li>
-          <li className="p-4 border-b border-gray-600">Pricing</li>
+          <li className="p-4 border-b border-gray-600">
+            {" "}
+            <Link to="home" spy={true} smooth={true} offset={0} duration={500}>
+              Home
+            </Link>
+          </li>
+          <li className="p-4 border-b border-gray-600">
+            {" "}
+            <Link
+              to="about"
+              spy={true}
+              smooth={true}
+              offset={50}
+              duration={500}
+            >
+              About
+            </Link>
+          </li>
+          <li className="p-4 border-b border-gray-600">
+            {" "}
+            <Link
+              to="signup"
+              spy={true}
+              smooth={true}
+              offset={5}
+              duration={500}
+            >
+              Signup
+            </Link>
+          </li>
+          <li className="p-4 border-b border-gray-600">
+            {" "}
+            <Link
+              to="pricing"
+              spy={true}
+              smooth={true}
+              offset={10}
+              duration={500}
+            >
+              Pricing
+            </Link>
+          </li>
 
-          <li className="p-4 border-b border-gray-600">Contact</li>
+          <li className="p-4 border-b border-gray-600">
+            {" "}
+            <Link
+              to="contact"
+              spy={true}
+              smooth={true}
+              offset={10}
+              duration={500}
+            >
+              Contact
+            </Link>
+          </li>
         </ul>
       </div>
     </div>

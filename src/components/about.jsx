@@ -5,7 +5,7 @@ import AboutAnimationData from "../assets/about.json";
 
 const About = () => {
   return (
-    <div className="bg-white w-full py-16 px-4  ">
+    <div id="about" className="bg-white w-full py-16 px-4  ">
       <div className="max-w-[1240px] mx-auto grid md:grid-cols-2">
         <Lottie
           className=" my-4 "

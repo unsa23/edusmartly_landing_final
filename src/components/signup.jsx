@@ -4,7 +4,7 @@ import SignupAnimationData from "../assets/signup.json";
 
 const Signup = () => {
   return (
-    <div className="w-full py-16  text-white px-4">
+    <div id="signup" className="w-full py-16  text-white px-4">
       <div className="max-w-[1240px] mx-auto grid lg:grid-cols-3 ">
         <div className="lg:col-span-2 my-4">
           <h1 className="md:text-4xl sm:text-3xl text-2xl font-bold py-2 ">
@@ -16,10 +16,10 @@ const Signup = () => {
           <Lottie
             animationData={SignupAnimationData}
             loop={true}
-            className="md:w-[500px] sm:w-[400px] sm:h-[400px] h-[500px] lg:my-[-68px] lg:mx-40"
+            className="md:w-[500px] sm:w-[400px] sm:h-[400px] h-[500px] lg:my-[-70px] lg:mx-40"
           />
         </div>
-        <div className="my-4 ">
+        <div className="md:my-4  ">
           <div className="flex flex-col  items-center justify-between w-full ">
             <input
               className="p-3 mb-3 mt-2 w-full rounded-md text-black"

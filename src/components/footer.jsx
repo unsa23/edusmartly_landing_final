@@ -8,10 +8,14 @@ import {
 
 import footerAnimation from "../assets/footer.json";
 import Lottie from "lottie-react";
+import { Link } from "react-scroll";
 
 const Footer = () => {
   return (
-    <div className="max-w-[1240px] mx-auto py-16 px-4 grid lg:grid-cols-3 gap-8 text-gray-300">
+    <div
+      id="contact"
+      className="max-w-[1240px] mx-auto py-16 px-4 grid lg:grid-cols-3 gap-8 text-gray-300"
+    >
       <div>
         <h1 className="w-full text-3xl font-bold text-[#00df9a]">
           EDUSMARTLY.
@@ -38,11 +42,71 @@ const Footer = () => {
       <div className="lg:w-[140px] md:mx-9 ">
         <h6 className="font-medium text-gray-400 ">Useful Links</h6>
         <ul>
-          <li className="py-2 text-sm">Home</li>
-          <li className="py-2 text-sm">About</li>
-          <li className="py-2 text-sm">Signup</li>
-          <li className="py-2 text-sm">Pricing</li>
-          <li className="py-2 text-sm">Contact</li>
+          <li className="py-2 text-sm">
+            {" "}
+            <Link
+              to="home"
+              spy={true}
+              smooth={true}
+              offset={0}
+              duration={500}
+              className=" border-b-2 border-transparent hover:border-[#00df9a] cursor-pointer"
+            >
+              Home
+            </Link>
+          </li>
+          <li className="py-2 text-sm">
+            {" "}
+            <Link
+              to="about"
+              spy={true}
+              smooth={true}
+              offset={0}
+              duration={500}
+              className=" border-b-2 border-transparent hover:border-[#00df9a] cursor-pointer"
+            >
+              About
+            </Link>
+          </li>
+          <li className="py-2 text-sm">
+            {" "}
+            <Link
+              to="signup"
+              spy={true}
+              smooth={true}
+              offset={-100}
+              duration={500}
+              className=" border-b-2 border-transparent hover:border-[#00df9a] cursor-pointer"
+            >
+              Signup
+            </Link>
+          </li>
+          <li className="py-2 text-sm">
+            {" "}
+            <Link
+              to="pricing"
+              spy={true}
+              smooth={true}
+              offset={0}
+              duration={500}
+              className=" border-b-2 border-transparent hover:border-[#00df9a] cursor-pointer"
+            >
+              Pricing
+            </Link>
+          </li>
+          <li className="py-2 text-sm">
+            {" "}
+            <Link
+              to="contact"
+              spy={true}
+              smooth={true}
+              offset={0}
+              duration={500}
+              className=" border-b-2 border-transparent hover:border-[#00df9a] cursor-pointer"
+            >
+              Contact
+            </Link>
+          </li>
         </ul>
       </div>
 

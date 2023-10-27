@@ -4,7 +4,7 @@ import ParticlesHome from "./particlesHome";
 
 const Hero = () => {
   return (
-    <div className="text-white">
+    <div id="home" className="text-white">
       <ParticlesHome />
       <div className="max-w-[800px] mt-[-96px] w-full h-screen mx-auto text-center flex flex-col justify-center">
         <p className="uppercase text-[#00df9a] font-bold text-2xl">
@@ -19,7 +19,7 @@ const Hero = () => {
           </p>
           <Typed
             className="md:text-4xl sm:text-4xl text-xl font-bold pl-2 md:pl-4"
-            strings={["Website", "App", "Customizations", "Integrations"]}
+            strings={["Website", "App", "Security", "Customizations"]}
             typeSpeed={120}
             backkSpeed={140}
             loop
